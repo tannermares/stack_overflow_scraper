@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'mechanize'
-require 'bootstrap'
 
 get '/' do
 	agent = Mechanize.new
