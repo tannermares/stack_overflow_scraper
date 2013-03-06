@@ -8,13 +8,3 @@ get '/' do
   	@questions = agent.page.search('.question-hyperlink')
   	erb :index
 end
-
-__END__
-@@ index
-<html>
-  <body>
-	<% @questions.each do |question| %>
-		<li><%= question %></li>
-	<% end %>
-  </body>
-</html>
