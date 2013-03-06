@@ -1,7 +1,18 @@
 <html>
+	<link rel="stylesheet" href="/bootstrap.min.css">
 	<body>
+		<h3 class="text-center" style="text-decoration:underline">Ruby Questions</h3>
+		<ul class="unstyled text-center">
+		<% @rubyQuestions.each do |question| %>
+			<li><%= question %></li>
+		<% end %>
+		</ul>
+		<hr>
+		<h3 class="text-center" style="text-decoration:underline">Git Questions</h3>
+		<ul class="unstyled text-center">
 		<% @questions.each do |question| %>
 			<li><%= question %></li>
 		<% end %>
+		</ul>
 	</body>
 </html>
